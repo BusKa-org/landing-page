@@ -267,19 +267,6 @@ p { line-height: 1.7; }
 }
 .navbar.scrolled .logo-wordmark { color: var(--col-navy); }
 
-.logo-byline {
-  font-size: 0.6875rem;
-  font-weight: 500;
-  color: rgba(255,255,255,.5);
-  border: 1px solid rgba(255,255,255,.25);
-  border-radius: 20px;
-  padding: 2px 8px;
-  transition: color 0.3s ease, border-color 0.3s ease;
-}
-.navbar.scrolled .logo-byline {
-  color: var(--text-2);
-  border-color: var(--border);
-}
 
 .nav-links {
   display: flex;
@@ -386,31 +373,6 @@ p { line-height: 1.7; }
   z-index: 1;
 }
 
-/* Hero badge */
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(247,179,43,.12);
-  color: var(--col-gold-lt);
-  border: 1px solid rgba(247,179,43,.28);
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  margin-bottom: 20px;
-}
-
-.badge-conf {
-  background: rgba(247,179,43,.25);
-  color: var(--col-gold);
-  font-weight: 700;
-  font-size: 0.75rem;
-  padding: 2px 8px;
-  border-radius: 999px;
-  letter-spacing: .04em;
-}
 
 .hero-text h1 {
   color: #fff;
@@ -747,57 +709,6 @@ p { line-height: 1.7; }
 .problem-card h3 { color: var(--text); margin-bottom: 9px; }
 .problem-card p  { font-size: 0.9375rem; color: var(--text-2); }
 
-/* =========================================================
-   REALIDADE (photo stat break)
-   ========================================================= */
-.realidade {
-  position: relative;
-  min-height: 420px;
-  display: flex;
-  align-items: center;
-  background-image: url('https://images.unsplash.com/photo-1617756218933-943423e097b1?w=1600&q=80&auto=format&fit=crop');
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.realidade-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(15,41,66,.88) 0%, rgba(13,91,207,.72) 100%);
-}
-
-.realidade-content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  color: #fff;
-  padding: 80px 0;
-}
-
-.realidade-stat {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  font-weight: 800;
-  color: var(--col-gold);
-  line-height: 1;
-  margin-bottom: 16px;
-  letter-spacing: -0.03em;
-}
-
-.realidade-desc {
-  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-  color: rgba(255,255,255,.9);
-  max-width: 540px;
-  margin: 0 auto 12px;
-  line-height: 1.5;
-}
-
-.realidade-source {
-  font-size: 0.875rem;
-  color: rgba(255,255,255,.45);
-  font-style: italic;
-}
 
 /* =========================================================
    ROLES / SOLUTION SECTION
@@ -1067,22 +978,6 @@ p { line-height: 1.7; }
   line-height: 1.7;
 }
 
-.download-specs {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 32px;
-}
-
-.download-specs li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.9375rem;
-  color: rgba(255,255,255,.75);
-}
-
-.download-specs svg { stroke: var(--col-gold); flex-shrink: 0; }
 
 .download-platforms {
   display: flex;
@@ -1126,14 +1021,6 @@ p { line-height: 1.7; }
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: .03em;
-}
-
-.download-note {
-  margin-top: 16px;
-  font-size: 0.8125rem;
-  color: rgba(255,255,255,.45);
-  line-height: 1.6;
-  max-width: 460px;
 }
 
 /* App card visual */
