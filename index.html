@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0F2942">
+  <title>BusKá — Transporte Escolar Público Inteligente</title>
+  <meta name="description" content="O BusKá digitaliza e moderniza a gestão do transporte escolar público em municípios brasileiros. Conecta gestores, motoristas e estudantes em tempo real. Baixe o APK gratuitamente.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BusKá — Transporte Escolar Público Inteligente">
+  <meta property="og:description" content="Plataforma integrada para gestão do transporte escolar público no Brasil. Aprovada por pesquisa científica da UFCG.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚌</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#inicio" class="nav-logo">
+      <span class="logo-icon" aria-hidden="true">🚌</span>
+      <span class="logo-wordmark">BusKá</span>
+      <span class="logo-byline">by MeBusKa</span>
+    </a>
+    <nav aria-label="Menu principal">
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#problema">O Problema</a></li>
+        <li><a href="#solucao">Solução</a></li>
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#artigo">Artigo</a></li>
+        <li><a href="#download" class="nav-download">Baixar APK</a></li>
+      </ul>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-shapes" aria-hidden="true">
+    <div class="hs hs-1"></div>
+    <div class="hs hs-2"></div>
+  </div>
+
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Aceito em conferência científica &middot; UFCG
+      </div>
+      <h1>O transporte escolar público do Brasil merece mais que uma planilha.</h1>
+      <p class="hero-lead">
+        O BusKá digitaliza e integra o planejamento, execução e monitoramento do transporte escolar em municípios brasileiros — conectando gestores, motoristas e estudantes em tempo real.
+      </p>
+      <div class="hero-actions">
+        <a href="https://tinyurl.com/buska-v100-beta-6" class="btn btn-gold">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Baixar APK Gratuito
+        </a>
+        <a href="https://youtu.be/LmE9hr4vy5M" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Ver Demonstração
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-phones" aria-hidden="true">
+
+      <!-- Motorista (back left) -->
+      <div class="hphone hphone-bl">
+        <div class="hphone-top hphone-top-navy">
+          <span class="hphone-role">MOTORISTA</span>
+          <span class="hphone-sub">IDA</span>
+        </div>
+        <div class="hphone-body">
+          <div class="route-list">
+            <div class="rl-stop rl-done">
+              <div class="rl-dot"></div>
+              <div class="rl-connector"></div>
+              <span>Praça Central</span>
+            </div>
+            <div class="rl-stop rl-now">
+              <div class="rl-dot"></div>
+              <div class="rl-connector"></div>
+              <span>Av. Floriano Peixoto</span>
+            </div>
+            <div class="rl-stop">
+              <div class="rl-dot"></div>
+              <span>UFCG — Campus I</span>
+            </div>
+          </div>
+          <div class="hphone-action navy-action">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Iniciar Viagem
+          </div>
+        </div>
+      </div>
+
+      <!-- Gestor (front center — primary) -->
+      <div class="hphone hphone-center">
+        <div class="hphone-top hphone-top-gold">
+          <span class="hphone-role">GESTOR</span>
+          <span class="hphone-sub">Hoje</span>
+        </div>
+        <div class="hphone-body">
+          <div class="stat-mini-grid">
+            <div class="smi smi-y"><b>2</b><small>Viagens</small></div>
+            <div class="smi smi-b"><b>3</b><small>Motoristas</small></div>
+            <div class="smi smi-t"><b>20</b><small>Alunos</small></div>
+            <div class="smi smi-n"><b>4</b><small>Ônibus</small></div>
+          </div>
+          <div class="smi-divider">Últimos 7 dias</div>
+          <div class="metrics-row">
+            <div class="mr-item"><b>6</b><small>Viagens realizadas</small></div>
+            <div class="mr-item"><b>0&thinsp;km</b><small>Km rodados</small></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aluno (back right) -->
+      <div class="hphone hphone-br">
+        <div class="hphone-top hphone-top-teal">
+          <span class="hphone-role">ALUNO</span>
+          <span class="hphone-live">&#9679; ao vivo</span>
+        </div>
+        <div class="hphone-body">
+          <div class="arriving-card">
+            <div class="arriving-bus" aria-hidden="true">🚌</div>
+            <div class="arriving-info">
+              <span class="arriving-eta">3 min</span>
+              <span class="arriving-lbl">Ônibus chegando</span>
+            </div>
+          </div>
+          <div class="arriving-bar"><div class="arriving-fill"></div></div>
+          <div class="arriving-route">Soledade → UFCG</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 72" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,36 C360,72 1080,0 1440,36 L1440,72 L0,72 Z" fill="var(--bg)"/>
+    </svg>
+  </div>
+</section>
+
+<!-- O PROBLEMA -->
+<section class="section" id="problema">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eye">O Desafio</p>
+      <h2>Gestão pelo WhatsApp não é suficiente</h2>
+      <p class="section-desc">Em muitos municípios brasileiros, o transporte escolar ainda depende de grupos informais, planilhas e ligações telefônicas. O resultado: rotas ineficientes, recursos desperdiçados e estudantes sem informação.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="prob-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="10" x2="11" y2="10"/></svg>
+        </div>
+        <h3>Planejamento sem dados</h3>
+        <p>Rotas definidas sem considerar a demanda real dos alunos geram desperdício de combustível e longas jornadas desnecessárias para estudantes do campo.</p>
+      </div>
+      <div class="problem-card">
+        <div class="prob-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+        </div>
+        <h3>Operação às cegas</h3>
+        <p>Motoristas executam rotas sem suporte digital. Gestores não têm visibilidade da frota em tempo real, impedindo decisões baseadas em dados concretos.</p>
+      </div>
+      <div class="problem-card">
+        <div class="prob-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Estudantes no escuro</h3>
+        <p>Alunos e responsáveis não sabem onde está o ônibus, quando chega ou se a viagem foi cancelada. A imprevisibilidade prejudica a permanência escolar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUÇÃO -->
+<section class="section section-alt" id="solucao">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eye">A Solução</p>
+      <h2>Uma plataforma, três perfis</h2>
+      <p class="section-desc">O BusKá integra cada ator do transporte escolar em interfaces desenhadas para sua realidade — do gestor municipal ao aluno de zona rural.</p>
+    </div>
+    <div class="roles-grid">
+
+      <div class="role-card role-gestor">
+        <div class="role-tag gestor-tag">Gestor</div>
+        <div class="role-icon-wrap gestor-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Planejamento e Controle</h3>
+        <p>Administradores municipais têm controle total sobre toda a operação de transporte.</p>
+        <ul class="role-list">
+          <li>Cadastre rotas baseadas na demanda real dos alunos</li>
+          <li>Monitore frota e indicadores operacionais em tempo real</li>
+          <li>Gerencie ocorrências e gere relatórios detalhados</li>
+          <li>Métricas de consumo, km rodados e taxa de ocupação</li>
+        </ul>
+      </div>
+
+      <div class="role-card role-motorista">
+        <div class="role-tag motorista-tag">Motorista</div>
+        <div class="role-icon-wrap motorista-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/><circle cx="12" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>
+        </div>
+        <h3>Execução com Suporte Digital</h3>
+        <p>Motoristas executam viagens com orientação completa e registro automático.</p>
+        <ul class="role-list">
+          <li>Inicie viagens com rota planejada visualizada no mapa</li>
+          <li>Confirme presença de alunos automaticamente por parada</li>
+          <li>Reporte ocorrências em tempo real durante a viagem</li>
+          <li>Histórico e registro completo de cada parada realizada</li>
+        </ul>
+      </div>
+
+      <div class="role-card role-aluno">
+        <div class="role-tag aluno-tag">Aluno</div>
+        <div class="role-icon-wrap aluno-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012 .91h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <h3>Visibilidade em Tempo Real</h3>
+        <p>Estudantes e responsáveis acompanham o serviço com transparência total.</p>
+        <ul class="role-list">
+          <li>Confirme uso do transporte com antecedência</li>
+          <li>Veja a posição do ônibus no mapa ao vivo</li>
+          <li>Receba notificações push antes da chegada</li>
+          <li>Acesse histórico de viagens e registros de presença</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FUNCIONALIDADES -->
+<section class="section" id="funcionalidades">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eye">Funcionalidades</p>
+      <h2>Construído para a realidade pública</h2>
+      <p class="section-desc">Desenvolvido para municípios brasileiros — com foco em praticidade operacional, dados confiáveis e transparência para toda a comunidade escolar.</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feat-card">
+        <div class="feat-icon feat-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Rastreamento GPS em Tempo Real</h3>
+          <p>Posição dos ônibus atualizada continuamente. Geofencing de 1&thinsp;km para alertas e 50&thinsp;m para check-in automático, calculado via fórmula de Haversine na memória da aplicação.</p>
+        </div>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon feat-teal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Gestão Inteligente de Rotas</h3>
+          <p>Cadastre rotas com pontos de parada geolocalizados, horários e dias de operação. Planejamento baseado na demanda real dos alunos, não em estimativas.</p>
+        </div>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon feat-gold">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Controle de Presença Automático</h3>
+          <p>Alunos confirmam uso do transporte com antecedência. Motoristas registram presenças em cada parada. Dados precisos para otimização contínua das rotas.</p>
+        </div>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon feat-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Relatórios e Métricas Operacionais</h3>
+          <p>Painéis com consumo médio (km/l), quilometragem, taxa de ocupação por linha. Dados para prestação de contas pública e decisões embasadas em evidências.</p>
+        </div>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon feat-teal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Notificações Push Inteligentes</h3>
+          <p>Alertas automáticos via Firebase Cloud Messaging para alunos e responsáveis: chegada do ônibus, início de viagens e ocorrências críticas.</p>
+        </div>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon feat-gold">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4z"/></svg>
+        </div>
+        <div class="feat-body">
+          <h3>Multi-Prefeitura (Multi-Tenant)</h3>
+          <p>Arquitetura escalável com isolamento completo por prefeitura. Um sistema, múltiplos municípios — cada um com seus dados, rotas e usuários independentes.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ARTIGO CIENTÍFICO -->
+<section class="section section-dark" id="artigo">
+  <div class="container">
+    <div class="article-layout">
+
+      <div class="article-aside">
+        <div class="article-verified">
+          <div class="article-check" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span>Aprovado por revisão científica</span>
+        </div>
+        <p class="article-inst">Universidade Federal de Campina Grande</p>
+        <p class="article-city">Campina Grande, Paraíba — Brasil</p>
+        <div class="article-btns">
+          <a href="https://youtu.be/LmE9hr4vy5M" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Ver Demonstração
+          </a>
+          <a href="https://github.com/BusKa-org/buska-frontend" target="_blank" rel="noopener noreferrer" class="btn btn-ghost-sm">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            Código no GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="article-main">
+        <p class="article-eye">Publicação Científica</p>
+        <h2>BusKá: Um Sistema Integrado para Planejamento, Execução e Monitoramento do Transporte Escolar Público</h2>
+        <blockquote class="article-quote">
+          "A solução digitaliza e integra processos operacionais por meio de uma abordagem orientada a dados, na qual as rotas consideram a demanda real de estudantes, promovendo maior previsibilidade e controle da operação."
+        </blockquote>
+        <p class="article-desc">O artigo apresenta a arquitetura completa do BusKá e sua avaliação inicial, demonstrando potencial concreto para melhorar a eficiência operacional, a transparência e a confiabilidade do transporte escolar público em municípios brasileiros.</p>
+        <p class="article-authors">Victor Rodrigues &middot; Wendell Oliveira &middot; Júlio Alcantara &middot; Lucas Melo &middot; Matheus Germano &middot; Pedro Simões &middot; Carlos Eduardo S. Pires</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section class="section section-download" id="download">
+  <div class="container">
+    <div class="download-layout">
+
+      <div class="download-main">
+        <p class="section-eye" style="color:var(--col-gold)">Download Gratuito</p>
+        <h2>Comece a transformar o transporte escolar hoje.</h2>
+        <p class="download-desc">O BusKá está disponível gratuitamente para Android. Baixe e veja na prática como a gestão digital transforma o transporte escolar público.</p>
+        <ul class="download-specs">
+          <li>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            Android 6.0 ou superior
+          </li>
+          <li>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Versão Beta 1.0.0
+          </li>
+          <li>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Verificado &middot; Sem custo
+          </li>
+        </ul>
+        <a href="https://tinyurl.com/buska-v100-beta-6" class="btn btn-gold btn-large">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Baixar APK Gratuitamente
+        </a>
+        <p class="download-note">&#9888; Pode ser necessário habilitar <em>Fontes desconhecidas</em> nas configurações do Android para instalar o APK.</p>
+      </div>
+
+      <div class="download-appcard" aria-hidden="true">
+        <div class="appcard-icon">🚌</div>
+        <div class="appcard-name">BusKá</div>
+        <div class="appcard-maker">MeBusKa</div>
+        <div class="appcard-ver">Versão Beta 1.0.0</div>
+        <div class="appcard-sep"></div>
+        <div class="appcard-plat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="18" r="1" fill="currentColor" stroke="none"/></svg>
+          Android APK
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="nav-logo footer-logo-link" aria-label="BusKá — início">
+          <span class="logo-icon" aria-hidden="true">🚌</span>
+          <span class="logo-wordmark">BusKá</span>
+        </a>
+        <p>Uma startup MeBusKa. Modernizando o transporte escolar público no Brasil, uma prefeitura por vez.</p>
+        <a href="mailto:contato.buska@gmail.com" class="footer-email">contato.buska@gmail.com</a>
+      </div>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <div class="fnav-col">
+          <h4>Produto</h4>
+          <ul>
+            <li><a href="#funcionalidades">Funcionalidades</a></li>
+            <li><a href="#solucao">Como Funciona</a></li>
+            <li><a href="#download">Baixar APK</a></li>
+            <li><a href="https://youtu.be/LmE9hr4vy5M" target="_blank" rel="noopener noreferrer">Demonstração</a></li>
+          </ul>
+        </div>
+        <div class="fnav-col">
+          <h4>Sobre</h4>
+          <ul>
+            <li><a href="#artigo">Artigo Científico</a></li>
+            <li><a href="#problema">O Problema</a></li>
+            <li><a href="mailto:contato.buska@gmail.com">Contato</a></li>
+          </ul>
+        </div>
+        <div class="fnav-col">
+          <h4>Código Aberto</h4>
+          <ul>
+            <li><a href="https://github.com/BusKa-org/buska-frontend" target="_blank" rel="noopener noreferrer">Frontend (React Native)</a></li>
+            <li><a href="https://github.com/BusKa-org/buska-backend" target="_blank" rel="noopener noreferrer">Backend (Flask API)</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&#169; 2025 MeBusKa. Todos os direitos reservados.</p>
+      <p>Desenvolvido na <a href="https://www.ufcg.edu.br" target="_blank" rel="noopener noreferrer">UFCG</a> — Campina Grande, Paraíba, Brasil</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky APK CTA (appears after hero) -->
+<div class="sticky-dl" id="stickyDl" aria-hidden="true">
+  <a href="https://tinyurl.com/buska-v100-beta-6" class="btn btn-gold" tabindex="-1">
+    <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    Baixar APK
+  </a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
