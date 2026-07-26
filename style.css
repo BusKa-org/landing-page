@@ -867,6 +867,40 @@ p { line-height: 1.7; }
 .feat-body p  { font-size: 0.9rem; color: var(--text-2); line-height: 1.65; }
 
 /* =========================================================
+   CONTACT SECTION
+   ========================================================= */
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: var(--r);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  background: transparent;
+  color: var(--col-blue);
+  border: 2px solid var(--col-blue);
+  text-decoration: none;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.15s ease;
+}
+.btn-outline:hover {
+  background: var(--col-blue);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.btn-outline:focus-visible {
+  outline: 3px solid var(--col-gold);
+  outline-offset: 3px;
+}
+
+/* =========================================================
    ARTICLE SECTION
    ========================================================= */
 .section-dark {
