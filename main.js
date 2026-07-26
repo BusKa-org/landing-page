@@ -33,6 +33,10 @@ document.addEventListener('click', e => {
   }
 });
 
+// Auto-update copyright year
+const yearEl = document.getElementById('footer-year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
 // Sticky download CTA — show after hero leaves viewport
 if (hero && stickyDl) {
   const obs = new IntersectionObserver(

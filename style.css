@@ -402,18 +402,14 @@ p { line-height: 1.7; }
   margin-bottom: 20px;
 }
 
-.badge-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--col-gold);
-  flex-shrink: 0;
-  animation: pulse-dot 2s ease infinite;
-}
-
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: .55; transform: scale(.8); }
+.badge-conf {
+  background: rgba(247,179,43,.25);
+  color: var(--col-gold);
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  letter-spacing: .04em;
 }
 
 .hero-text h1 {
@@ -585,17 +581,22 @@ p { line-height: 1.7; }
 }
 
 .rl-stop {
-  display: grid;
-  grid-template-columns: 14px 1fr;
-  grid-template-rows: auto 1fr;
-  column-gap: 8px;
-  align-items: start;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
   font-size: 0.68rem;
   color: #7A90B0;
-  padding-bottom: 2px;
 }
 
-.rl-stop span { grid-column: 2; padding: 1px 0 4px; }
+.rl-stop span { padding: 1px 0 4px; }
+
+.rl-track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 14px;
+  flex-shrink: 0;
+}
 
 .rl-dot {
   width: 11px;
@@ -603,16 +604,14 @@ p { line-height: 1.7; }
   border-radius: 50%;
   border: 2px solid #CBD5E1;
   background: #fff;
-  margin-top: 1px;
   flex-shrink: 0;
 }
 
 .rl-connector {
-  grid-column: 1;
   width: 2px;
-  height: 18px;
+  flex: 1;
+  min-height: 12px;
   background: #E2E8F0;
-  margin: 2px auto 0;
 }
 
 .rl-done .rl-dot { border-color: var(--col-teal); background: var(--col-teal); }
@@ -747,6 +746,58 @@ p { line-height: 1.7; }
 
 .problem-card h3 { color: var(--text); margin-bottom: 9px; }
 .problem-card p  { font-size: 0.9375rem; color: var(--text-2); }
+
+/* =========================================================
+   REALIDADE (photo stat break)
+   ========================================================= */
+.realidade {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1617756218933-943423e097b1?w=1600&q=80&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.realidade-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(15,41,66,.88) 0%, rgba(13,91,207,.72) 100%);
+}
+
+.realidade-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.realidade-stat {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 800;
+  color: var(--col-gold);
+  line-height: 1;
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+}
+
+.realidade-desc {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  color: rgba(255,255,255,.9);
+  max-width: 540px;
+  margin: 0 auto 12px;
+  line-height: 1.5;
+}
+
+.realidade-source {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,.45);
+  font-style: italic;
+}
 
 /* =========================================================
    ROLES / SOLUTION SECTION
@@ -1033,6 +1084,50 @@ p { line-height: 1.7; }
 
 .download-specs svg { stroke: var(--col-gold); flex-shrink: 0; }
 
+.download-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.btn-ghost-lg {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 34px;
+  border-radius: var(--r);
+  font-weight: 600;
+  font-size: 1rem;
+  background: transparent;
+  color: rgba(255,255,255,.8);
+  border: 2px solid rgba(255,255,255,.35);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+.btn-ghost-lg:hover {
+  background: rgba(255,255,255,.1);
+  border-color: rgba(255,255,255,.65);
+  color: #fff;
+}
+.btn-ghost-lg:focus-visible {
+  outline: 3px solid var(--col-gold);
+  outline-offset: 3px;
+}
+
+.badge-soon {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.15);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: .03em;
+}
+
 .download-note {
   margin-top: 16px;
   font-size: 0.8125rem;
@@ -1256,5 +1351,4 @@ p { line-height: 1.7; }
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   html { scroll-behavior: auto; }
-  .badge-dot { animation: none; }
 }

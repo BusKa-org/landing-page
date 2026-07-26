@@ -31,7 +31,7 @@
         <li><a href="#solucao">Solução</a></li>
         <li><a href="#funcionalidades">Funcionalidades</a></li>
         <li><a href="#artigo">Artigo</a></li>
-        <li><a href="#download" class="nav-download">Baixar APK</a></li>
+        <li><a href="#download" class="nav-download">Download</a></li>
       </ul>
     </nav>
     <button class="nav-burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
@@ -52,8 +52,8 @@
   <div class="container hero-grid">
     <div class="hero-text">
       <div class="hero-badge">
-        <span class="badge-dot" aria-hidden="true"></span>
-        Aceito em conferência científica &middot; UFCG
+        <span class="badge-conf">SBBD 2026</span>
+        Aceito no Simpósio Brasileiro de Banco de Dados
       </div>
       <h1>O transporte escolar público do Brasil merece mais que uma planilha.</h1>
       <p class="hero-lead">
@@ -82,17 +82,23 @@
         <div class="hphone-body">
           <div class="route-list">
             <div class="rl-stop rl-done">
-              <div class="rl-dot"></div>
-              <div class="rl-connector"></div>
+              <div class="rl-track">
+                <div class="rl-dot"></div>
+                <div class="rl-connector"></div>
+              </div>
               <span>Praça Central</span>
             </div>
             <div class="rl-stop rl-now">
-              <div class="rl-dot"></div>
-              <div class="rl-connector"></div>
+              <div class="rl-track">
+                <div class="rl-dot"></div>
+                <div class="rl-connector"></div>
+              </div>
               <span>Av. Floriano Peixoto</span>
             </div>
             <div class="rl-stop">
-              <div class="rl-dot"></div>
+              <div class="rl-track">
+                <div class="rl-dot"></div>
+              </div>
               <span>UFCG — Campus I</span>
             </div>
           </div>
@@ -184,6 +190,16 @@
         <p>Alunos e responsáveis não sabem onde está o ônibus, quando chega ou se a viagem foi cancelada. A imprevisibilidade prejudica a permanência escolar.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- REALIDADE -->
+<section class="realidade" id="realidade" aria-label="Dimensão do desafio">
+  <div class="realidade-overlay" aria-hidden="true"></div>
+  <div class="container realidade-content">
+    <p class="realidade-stat">43,9 milhões</p>
+    <p class="realidade-desc">de estudantes dependem do transporte escolar público no Brasil</p>
+    <p class="realidade-source">— Fonte: INEP/MEC</p>
   </div>
 </section>
 
@@ -302,7 +318,7 @@
         </div>
         <div class="feat-body">
           <h3>Notificações Push Inteligentes</h3>
-          <p>Alertas automáticos via Firebase Cloud Messaging para alunos e responsáveis: chegada do ônibus, início de viagens e ocorrências críticas.</p>
+          <p>Alertas automáticos direto no celular de alunos e responsáveis: ônibus chegando, início de viagem e qualquer ocorrência durante o trajeto.</p>
         </div>
       </div>
 
@@ -330,7 +346,7 @@
           <div class="article-check" aria-hidden="true">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          <span>Aprovado por revisão científica</span>
+          <span>SBBD 2026 — Simpósio Brasileiro de Banco de Dados</span>
         </div>
         <p class="article-inst">Universidade Federal de Campina Grande</p>
         <p class="article-city">Campina Grande, Paraíba — Brasil</p>
@@ -368,7 +384,7 @@
       <div class="download-main">
         <p class="section-eye" style="color:var(--col-gold)">Download Gratuito</p>
         <h2>Comece a transformar o transporte escolar hoje.</h2>
-        <p class="download-desc">O BusKá está disponível gratuitamente para Android. Baixe e veja na prática como a gestão digital transforma o transporte escolar público.</p>
+        <p class="download-desc">O BusKá está disponível gratuitamente para Android e iOS. Baixe e veja na prática como a gestão digital transforma o transporte escolar público.</p>
         <ul class="download-specs">
           <li>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
@@ -383,10 +399,16 @@
             Verificado &middot; Sem custo
           </li>
         </ul>
-        <a href="https://tinyurl.com/buska-v100-beta-6" class="btn btn-gold btn-large">
-          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Baixar APK Gratuitamente
-        </a>
+        <div class="download-platforms">
+          <a href="https://tinyurl.com/buska-v100-beta-6" class="btn btn-gold btn-large">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="18" r="1" fill="currentColor" stroke="none"/></svg>
+            Baixar para Android
+          </a>
+          <a href="#" class="btn btn-ghost-lg">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Baixar para iOS
+          </a>
+        </div>
         <p class="download-note">&#9888; Pode ser necessário habilitar <em>Fontes desconhecidas</em> nas configurações do Android para instalar o APK.</p>
       </div>
 
@@ -424,7 +446,7 @@
           <ul>
             <li><a href="#funcionalidades">Funcionalidades</a></li>
             <li><a href="#solucao">Como Funciona</a></li>
-            <li><a href="#download">Baixar APK</a></li>
+            <li><a href="#download">Download</a></li>
             <li><a href="https://youtu.be/LmE9hr4vy5M" target="_blank" rel="noopener noreferrer">Demonstração</a></li>
           </ul>
         </div>
@@ -446,7 +468,7 @@
       </nav>
     </div>
     <div class="footer-bottom">
-      <p>&#169; 2025 MeBusKa. Todos os direitos reservados.</p>
+      <p>&#169; <span id="footer-year">2026</span> MeBusKa. Todos os direitos reservados.</p>
       <p>Desenvolvido na <a href="https://www.ufcg.edu.br" target="_blank" rel="noopener noreferrer">UFCG</a> — Campina Grande, Paraíba, Brasil</p>
     </div>
   </div>
