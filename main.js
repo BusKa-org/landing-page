@@ -44,6 +44,20 @@ if (IOS_DISPONIVEL) {
   if (desc) desc.textContent = desc.dataset.descIos;
 }
 
+// O numero da versao no cartao de download envelhecia a cada release. Le a
+// ultima publicada e substitui. Se a chamada falhar, por limite de taxa da API
+// ou por rede, o valor que ja esta no HTML fica: nunca some da tela.
+const verEl = document.querySelector('.appcard-ver');
+if (verEl) {
+  fetch('https://api.github.com/repos/BusKa-org/municipal-frontend/releases/latest')
+    .then(r => (r.ok ? r.json() : Promise.reject(r.status)))
+    .then(({ tag_name }) => {
+      const num = String(tag_name || '').replace(/^v/, '').replace(/-beta$/, '');
+      if (num) verEl.textContent = `Versão Beta ${num}`;
+    })
+    .catch(() => {});
+}
+
 // Auto-update copyright year
 const yearEl = document.getElementById('footer-year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
