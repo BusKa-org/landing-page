@@ -28,5 +28,9 @@ fi
 sudo git -C "$WEBROOT" pull --ff-only origin main
 echo "publicado: $(sudo git -C "$WEBROOT" log --oneline -1)"
 
-curl -fsS -o /dev/null -w "no ar: HTTP %{http_code}\n" \
+# A VM nao resolve o proprio nome, entao apontamos o nome para o loopback e
+# batemos no nginx local. Assim o teste cobre TLS, SNI e o location, sem DNS.
+curl -fsSL -o /dev/null -w "no ar: HTTP %{http_code}\n" \
+  --resolve buska.lsd.ufcg.edu.br:443:127.0.0.1 \
+  --resolve buska.lsd.ufcg.edu.br:80:127.0.0.1 \
   https://buska.lsd.ufcg.edu.br/landing-page/
