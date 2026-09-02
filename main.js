@@ -33,6 +33,17 @@ document.addEventListener('click', e => {
   }
 });
 
+// Só existe build de Android. Vira true quando houver iOS, e o botão e o texto
+// da seção de download voltam sozinhos.
+const IOS_DISPONIVEL = false;
+
+if (IOS_DISPONIVEL) {
+  const btnIos = document.getElementById('btnIos');
+  const desc = document.getElementById('downloadDesc');
+  if (btnIos) btnIos.hidden = false;
+  if (desc) desc.textContent = desc.dataset.descIos;
+}
+
 // Auto-update copyright year
 const yearEl = document.getElementById('footer-year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();

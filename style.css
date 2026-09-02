@@ -144,6 +144,10 @@ p { line-height: 1.7; }
 /* =========================================================
    BUTTONS
    ========================================================= */
+/* O atributo hidden perde para qualquer classe que defina display, e .btn
+   define. Sem isto o botão marcado como hidden continua na tela. */
+[hidden] { display: none !important; }
+
 .btn {
   display: inline-flex;
   align-items: center;
